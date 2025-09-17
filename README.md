@@ -39,6 +39,7 @@ This project demonstrates an end-to-end ELT (Extract → Load → Transform) pip
 
 ## Dataset
 Retail sales dataset from Kaggle: [Online Retail Dataset on Kaggle](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data)
+Data Size: Dataset has 541909 Rows
 
 ## How to Run
 1. Import notebooks into Databricks Workspace  
