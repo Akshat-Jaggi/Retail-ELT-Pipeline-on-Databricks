@@ -16,6 +16,9 @@ This project demonstrates an end-to-end ELT (Extract → Load → Transform) pip
    - Top 10 Customers related to highest overall revenue  
 4. **Dashboard Layer**: Visualizes Gold tables with bar and Area charts, automatically refreshed via Databricks Job.
 
+<img width="1916" height="1012" alt="image" src="https://github.com/user-attachments/assets/ce97c0ca-c6a8-415c-b533-bea69bb7c75a" />
+
+
 ## Technologies Used
 - Databricks Free Edition  
 - PySpark
