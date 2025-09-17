@@ -1,0 +1,34 @@
+resources:
+  jobs:
+    ELT_Job_on_Retail_Data_from_Kaggle:
+      name: ELT Job on Retail Data from Kaggle
+      tasks:
+        - task_key: Bronze_Ingestion
+          notebook_task:
+            notebook_path: /Workspace/Users/jaggiakshat@gmail.com/01_Bronze_Ingest
+            source: WORKSPACE
+        - task_key: Silver_Transformation
+          depends_on:
+            - task_key: Bronze_Ingestion
+          notebook_task:
+            notebook_path: /Workspace/Users/jaggiakshat@gmail.com/02_Silver_Transform
+            source: WORKSPACE
+        - task_key: Gold_Aggregate
+          depends_on:
+            - task_key: Silver_Transformation
+          notebook_task:
+            notebook_path: /Workspace/Users/jaggiakshat@gmail.com/03_Gold_Aggregate
+            source: WORKSPACE
+        - task_key: Dashboard_Refresh
+          depends_on:
+            - task_key: Gold_Aggregate
+          dashboard_task:
+            subscription:
+              subscribers:
+                - user_name: jaggiakshat@gmail.com
+              paused: true
+            warehouse_id: 65f2f610a54d2af5
+            dashboard_id: 01f093ea426713f782c9cc62390fe4cb
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
