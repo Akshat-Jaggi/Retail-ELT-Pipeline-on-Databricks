@@ -34,6 +34,9 @@ This project demonstrates an end-to-end ELT (Extract → Load → Transform) pip
 - Dashboard for real-time business insights  
 - Handles missing Customer IDs with a robust solution  
 
+## Databricks Dashboard Preview
+<img width="1915" height="1018" alt="image" src="https://github.com/user-attachments/assets/dc2c9d5f-182b-4d91-8bd3-95b07552b24e" />
+
 ## Dataset
 Retail sales dataset from Kaggle: [Online Retail Dataset on Kaggle](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data)
 
